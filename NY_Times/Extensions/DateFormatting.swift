@@ -13,8 +13,8 @@ extension DateFormatter {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
         formatter.calendar = Calendar(identifier: .iso8601)
-        formatter.timeZone = TimeZone.current
-        formatter.locale = Locale.current
+        formatter.timeZone = .current
+        formatter.locale = .current
         return formatter
     }()
 }

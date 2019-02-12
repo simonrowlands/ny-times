@@ -43,7 +43,7 @@ final class ArticleAPI: NetworkingAPI {
             }
             
             let decoder = JSONDecoder()
-            decoder.dateDecodingStrategy = .customNYTimes
+            decoder.dateDecodingStrategy = .articleDateDecoder
             
             guard let data = data else {
                 print("Response missing data")

@@ -9,7 +9,7 @@
 import Foundation
 
 extension JSONDecoder.DateDecodingStrategy {
-    static let customNYTimes = custom { decoder throws -> Date in
+    static let articleDateDecoder = custom { decoder throws -> Date in
         
         let container = try decoder.singleValueContainer()
         let string = try container.decode(String.self)

@@ -83,9 +83,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Popular Articles" id="KIa-2X-a7p"/>
-                    <connections>
-                        <segue destination="4Xg-dk-wlS" kind="custom" id="J3k-Zz-0If"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nXG-r1-bsX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
