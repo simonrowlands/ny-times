@@ -18,10 +18,11 @@ final class ArticleListViewModel {
     
     var networkingAPI = ArticleAPI()
 
-    func getArticles() {
+    func getArticles(completion: (() -> ())? = nil) {
         networkingAPI.mostViewedArticles(section: .allSections, period: .week) { [weak self] articles in
             guard let strongSelf = self else { return }
             strongSelf.delegate?.articleListViewModel(didReceiveArticles: articles)
+            completion?()
         }
     }
 }

@@ -21,7 +21,14 @@ final class ArticleListTableViewController: UITableViewController {
         viewModel.delegate = self
         viewModel.getArticles()
         
-        
+        tableView.refreshControl = UIRefreshControl()
+        tableView.refreshControl?.addTarget(self, action: #selector(refreshArticles), for: .valueChanged)
+    }
+    
+    @objc func refreshArticles() {
+        viewModel.getArticles { [weak self] in
+            self?.tableView.refreshControl?.endRefreshing()
+        }
     }
 }
 
