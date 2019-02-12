@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ArticleListTableViewController.swift
 //  NY Times Most Popular
 //
 //  Created by Simon Rowlands on 12/02/2019.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ArticleListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    
 }
-
