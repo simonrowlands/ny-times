@@ -20,6 +20,8 @@ final class ArticleListTableViewController: UITableViewController {
         
         viewModel.delegate = self
         viewModel.getArticles()
+        
+        
     }
 }
 
@@ -56,6 +58,12 @@ extension ArticleListTableViewController { // Data Source
 
 extension ArticleListTableViewController { // Delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let article = articles?[indexPath.row] else {
+            return
+        }
         
+        let articleDetailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ArticleDetailViewController") as! ArticleDetailViewController
+        articleDetailVC.article = article
+        navigationController?.pushViewController(articleDetailVC, animated: true)
     }
 }

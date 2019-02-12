@@ -22,20 +22,8 @@ final class ArticleTableViewCell: UITableViewCell {
     }
     
     func loadImage(from article: Article) { // This is prone to index errors, only here for demonstration
-        if let media = article.media?.first, let metadata = media.metadata?.first {
-            let url = metadata.url
-            if let imageURL = URL(string: url) {
-                
-                DispatchQueue.global().async {
-                    let pictureData = try? Data(contentsOf: imageURL)
-                    
-                    if let pictureData = pictureData, let articleImage = UIImage(data: pictureData) {
-                        DispatchQueue.main.async { [weak self] in
-                            self?.articleImageView.image = articleImage
-                        }
-                    }
-                }
-            }
+        article.getMedia { [weak self] image in
+            self?.articleImageView.image = image
         }
     }
 }
