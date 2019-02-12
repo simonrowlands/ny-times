@@ -1,4 +1,5 @@
-# ny-times-most-popular
+# NY Times
+
 An application that displays the most popular articles from the NY Times API in a table view.
 
 The project uses an MVVM architecture and utilisies structs, extensions and some class inheritance to separate and define the code more clearly.
