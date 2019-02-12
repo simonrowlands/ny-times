@@ -12,8 +12,16 @@
 		F41E46D92212E13B00B56037 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41E46D72212E13B00B56037 /* Main.storyboard */; };
 		F41E46DB2212E13B00B56037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F41E46DA2212E13B00B56037 /* Assets.xcassets */; };
 		F41E46DE2212E13B00B56037 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41E46DC2212E13B00B56037 /* LaunchScreen.storyboard */; };
-		F41E46E92212E13B00B56037 /* NY_Times_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E46E82212E13B00B56037 /* NY_Times_Tests.swift */; };
+		F41E46E92212E13B00B56037 /* NY_TimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E46E82212E13B00B56037 /* NY_TimesTests.swift */; };
 		F41E46F42212E13B00B56037 /* NY_Times_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E46F32212E13B00B56037 /* NY_Times_UITests.swift */; };
+		F41E47052212F63F00B56037 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E47042212F63F00B56037 /* Article.swift */; };
+		F41E47082212F74D00B56037 /* NetworkingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E47072212F74D00B56037 /* NetworkingAPI.swift */; };
+		F41E470C2212FD1000B56037 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E470B2212FD1000B56037 /* ArticleTableViewCell.swift */; };
+		F41E470E221305B300B56037 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E470D221305B300B56037 /* ArticleListViewModel.swift */; };
+		F41E471022130F4500B56037 /* ArticleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E470F22130F4500B56037 /* ArticleAPI.swift */; };
+		F41E471322131B8B00B56037 /* DateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E471222131B8B00B56037 /* DateFormatting.swift */; };
+		F41E471522131B9D00B56037 /* Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E471422131B9D00B56037 /* Decoding.swift */; };
+		F41E47182213210700B56037 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E47172213210700B56037 /* ArticleDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +50,19 @@
 		F41E46DD2212E13B00B56037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F41E46DF2212E13B00B56037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F41E46E42212E13B00B56037 /* NY_TimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NY_TimesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F41E46E82212E13B00B56037 /* NY_Times_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NY_Times_Tests.swift; sourceTree = "<group>"; };
+		F41E46E82212E13B00B56037 /* NY_TimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NY_TimesTests.swift; sourceTree = "<group>"; };
 		F41E46EA2212E13B00B56037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F41E46EF2212E13B00B56037 /* NY_TimesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NY_TimesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41E46F32212E13B00B56037 /* NY_Times_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NY_Times_UITests.swift; sourceTree = "<group>"; };
 		F41E46F52212E13B00B56037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F41E47042212F63F00B56037 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		F41E47072212F74D00B56037 /* NetworkingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingAPI.swift; sourceTree = "<group>"; };
+		F41E470B2212FD1000B56037 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		F41E470D221305B300B56037 /* ArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
+		F41E470F22130F4500B56037 /* ArticleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleAPI.swift; sourceTree = "<group>"; };
+		F41E471222131B8B00B56037 /* DateFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatting.swift; sourceTree = "<group>"; };
+		F41E471422131B9D00B56037 /* Decoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoding.swift; sourceTree = "<group>"; };
+		F41E47172213210700B56037 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +95,7 @@
 			children = (
 				F41E46D22212E13A00B56037 /* NY_Times */,
 				F41E46E72212E13B00B56037 /* NY_Times_Tests */,
-				F41E46F22212E13B00B56037 /* NY_Times_UITests */,
+				F41E46F22212E13B00B56037 /* NY_TimesUITests */,
 				F41E46D12212E13A00B56037 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,10 +115,11 @@
 			children = (
 				F41E46D32212E13A00B56037 /* AppDelegate.swift */,
 				F41E47012212F24200B56037 /* ArticleList */,
+				F41E47022212F60400B56037 /* Model */,
+				F41E47062212F71300B56037 /* API */,
+				F41E471122131B7D00B56037 /* Extensions */,
+				F41E47032212F61100B56037 /* Supporting_Files */,
 				F41E46D72212E13B00B56037 /* Main.storyboard */,
-				F41E46DA2212E13B00B56037 /* Assets.xcassets */,
-				F41E46DC2212E13B00B56037 /* LaunchScreen.storyboard */,
-				F41E46DF2212E13B00B56037 /* Info.plist */,
 			);
 			path = NY_Times;
 			sourceTree = "<group>";
@@ -110,27 +127,74 @@
 		F41E46E72212E13B00B56037 /* NY_Times_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				F41E46E82212E13B00B56037 /* NY_Times_Tests.swift */,
+				F41E46E82212E13B00B56037 /* NY_TimesTests.swift */,
 				F41E46EA2212E13B00B56037 /* Info.plist */,
 			);
 			path = NY_Times_Tests;
 			sourceTree = "<group>";
 		};
-		F41E46F22212E13B00B56037 /* NY_Times_UITests */ = {
+		F41E46F22212E13B00B56037 /* NY_TimesUITests */ = {
 			isa = PBXGroup;
 			children = (
 				F41E46F32212E13B00B56037 /* NY_Times_UITests.swift */,
 				F41E46F52212E13B00B56037 /* Info.plist */,
 			);
-			path = NY_Times_UITests;
+			path = NY_TimesUITests;
 			sourceTree = "<group>";
 		};
 		F41E47012212F24200B56037 /* ArticleList */ = {
 			isa = PBXGroup;
 			children = (
 				F41E46D52212E13B00B56037 /* ArticleListTableViewController.swift */,
+				F41E470D221305B300B56037 /* ArticleListViewModel.swift */,
+				F41E470B2212FD1000B56037 /* ArticleTableViewCell.swift */,
+				F41E4716221320FA00B56037 /* ArticleDetail */,
 			);
 			path = ArticleList;
+			sourceTree = "<group>";
+		};
+		F41E47022212F60400B56037 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F41E47042212F63F00B56037 /* Article.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F41E47032212F61100B56037 /* Supporting_Files */ = {
+			isa = PBXGroup;
+			children = (
+				F41E46DA2212E13B00B56037 /* Assets.xcassets */,
+				F41E46DC2212E13B00B56037 /* LaunchScreen.storyboard */,
+				F41E46DF2212E13B00B56037 /* Info.plist */,
+			);
+			path = Supporting_Files;
+			sourceTree = "<group>";
+		};
+		F41E47062212F71300B56037 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F41E47072212F74D00B56037 /* NetworkingAPI.swift */,
+				F41E470F22130F4500B56037 /* ArticleAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F41E471122131B7D00B56037 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F41E471222131B8B00B56037 /* DateFormatting.swift */,
+				F41E471422131B9D00B56037 /* Decoding.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F41E4716221320FA00B56037 /* ArticleDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F41E47172213210700B56037 /* ArticleDetailViewController.swift */,
+			);
+			path = ArticleDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +328,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41E471322131B8B00B56037 /* DateFormatting.swift in Sources */,
+				F41E471022130F4500B56037 /* ArticleAPI.swift in Sources */,
+				F41E470E221305B300B56037 /* ArticleListViewModel.swift in Sources */,
+				F41E47082212F74D00B56037 /* NetworkingAPI.swift in Sources */,
+				F41E47182213210700B56037 /* ArticleDetailViewController.swift in Sources */,
+				F41E470C2212FD1000B56037 /* ArticleTableViewCell.swift in Sources */,
 				F41E46D62212E13B00B56037 /* ArticleListTableViewController.swift in Sources */,
 				F41E46D42212E13A00B56037 /* AppDelegate.swift in Sources */,
+				F41E471522131B9D00B56037 /* Decoding.swift in Sources */,
+				F41E47052212F63F00B56037 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F41E46E92212E13B00B56037 /* NY_Times_Tests.swift in Sources */,
+				F41E46E92212E13B00B56037 /* NY_TimesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +514,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87FJ4JFSM4;
-				INFOPLIST_FILE = "$(SRCROOT)/NY Times/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/NY_Times/Supporting_Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,7 +532,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87FJ4JFSM4;
-				INFOPLIST_FILE = "$(SRCROOT)/NY Times/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/NY_Times/Supporting_Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -518,6 +590,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87FJ4JFSM4;
 				INFOPLIST_FILE = NY_TimesUITests/Info.plist;
@@ -528,6 +601,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.simonrowlands.NY_TimesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = NY_Times;
@@ -538,6 +612,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87FJ4JFSM4;
 				INFOPLIST_FILE = NY_TimesUITests/Info.plist;
@@ -548,6 +623,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.simonrowlands.NY_TimesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = NY_Times;

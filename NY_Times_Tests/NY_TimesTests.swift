@@ -1,6 +1,6 @@
 //
 //  NY_Times.swift
-//  NY_Times_Tests
+//  NY_TimesTests
 //
 //  Created by Simon Rowlands on 12/02/2019.
 //  Copyright © 2019 simonrowlands. All rights reserved.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import NY_Times
 
-class NY_Times_Tests: XCTestCase {
+class NY_TimesTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
